@@ -8601,3 +8601,32 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+			.nav-strip {
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  background-color: rgba(0, 0, 0, 0.8);
+			  z-index: 1000;
+			  padding: 1em 2em;
+			  text-align: center;
+			}
+			
+			.nav-strip ul {
+			  margin: 0;
+			  padding: 0;
+			  list-style: none;
+			  display: inline-flex;
+			  gap: 2em;
+			  justify-content: center;
+			}
+			
+			.nav-strip ul li a {
+			  color: white;
+			  text-decoration: none;
+			  font-weight: 600;
+			  transition: color 0.3s ease;
+			}
+			
+			.nav-strip ul li a:hover {
+			  color: #00c6ff;
+			}
