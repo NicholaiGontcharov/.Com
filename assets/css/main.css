@@ -8651,3 +8651,13 @@ input, select, textarea {
 		html {
 		  scroll-behavior: smooth;
 		}
+/* Smart Nav Bar and Transparent */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(128, 128, 128, 0.7); /* semi-transparent gray */
+  z-index: 1000;
+  transition: top 0.3s;
+}
