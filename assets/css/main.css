@@ -8652,7 +8652,7 @@ input, select, textarea {
 		  scroll-behavior: smooth;
 		}
 /* Smart Nav Bar and Transparent */
-.navbar {
+#navbar {
   width: 100%;
   position: fixed;
   top: 0;
