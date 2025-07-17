@@ -8670,7 +8670,7 @@ html, body {
   z-index: 1000;
   transition: top 0.3s;
   border-radius: 0;                /* Remove rounded corners */
-  height: 40px;
+  height: 35px;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -8688,7 +8688,7 @@ html, body {
 /* Phones */
 @media (max-width: 600px) {
   #navbar {
-    height: 45px;
+    height: 35px;
     padding: 0 5px;
   }
 }
