@@ -8665,7 +8665,7 @@ input, select, textarea {
 			  top: 0;
 			  left: 0;
 			  width: 100%;
-			  height: 35px;
+			  height: 25px;
 			  background: rgba(50, 50, 50, 0.6);
 			  z-index: 1000;
 			
@@ -8733,8 +8733,8 @@ input, select, textarea {
 				  transform: translateY(0);
 				}
 
-		/* Restore width */
-			#contact .inner.medium {
+	/* Restore Contact width */
+		#contact .inner.medium {
 			  max-width: 600px; /* or your original width */
 			  width: 100%;
 			  margin: 0 auto;
@@ -8775,5 +8775,5 @@ input, select, textarea {
 			/* Smaller submit button padding */
 			#contact input[type="submit"] {
 			  padding: 0.5em 1em;
-			  font-size: 1rem;
+			  font-size: .75rem;
 			}
