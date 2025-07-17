@@ -8777,3 +8777,61 @@ input, select, textarea {
 			  padding: 0.5em 1em;
 			  font-size: .75rem;
 			}
+			
+	/* Contact section spacing cleanup */
+			#contact {
+			  padding-top: 1em;
+			  padding-bottom: 1em;
+			  min-height: auto !important; /* Prevents section from stretching full screen */
+			  height: auto; /* Overrides full height if applied */
+			}
+			
+		/* Shrink vertical padding on wrapper */
+			#contact.wrapper {
+			  padding: 1em 0 !important;
+			}
+			
+		/* Remove padding inside .inner.medium */
+			#contact .inner.medium {
+			  max-width: 600px; /* Keep it readable */
+			  width: 100%;
+			  margin: 0 auto;
+			  padding: 0 !important;
+			}
+			
+		/* Heading spacing */
+			#contact h2 {
+			  margin-top: 0;
+			  margin-bottom: 0.5em;
+			  font-size: 1.5rem;
+			}
+			
+		/* Field spacing */
+			#contact .fields {
+			  margin-top: 0;
+			  margin-bottom: 0;
+			}
+			
+		/* Each input field’s margin */
+			#contact .field {
+			  margin-bottom: 0.5em;
+			}
+			
+		/* Form spacing */
+			#contact form {
+			  margin-bottom: 0;
+			}
+			
+		/* Input and textarea padding */
+			#contact input,
+			#contact textarea {
+			  padding: 0.5em;
+			  font-size: 1rem;
+			  line-height: 1.2;
+			}
+			
+		/* Submit button size */
+			#contact input[type="submit"] {
+			  padding: 0.5em 1em;
+			  font-size: 0.75rem;
+			}
