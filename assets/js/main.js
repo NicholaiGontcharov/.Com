@@ -358,7 +358,7 @@
 			  window.addEventListener('DOMContentLoaded', function() {
 			    setTimeout(function() {
 			      document.getElementById('navbar').classList.add('visible');
-			    }, 1000); // 2000 milliseconds = 2 seconds
+			    }, 750); // 2000 milliseconds = 2 seconds
 			  });
 			
 	
