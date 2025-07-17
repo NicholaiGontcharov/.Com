@@ -354,12 +354,12 @@
 			  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 			}, false);
 	
-			<script>
+			// Navbar fade in.
 			  window.addEventListener('DOMContentLoaded', function() {
 			    setTimeout(function() {
 			      document.getElementById('navbar').classList.add('visible');
 			    }, 2000); // 2000 milliseconds = 2 seconds
 			  });
-			</script>
+			
 	
 })(jQuery);
