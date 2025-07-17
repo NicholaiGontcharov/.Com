@@ -339,7 +339,7 @@
 						});
 
 				let lastScrollTop = 0;
-			const navbar = document.querySelector('.navbar');
+			const navbar = document.querySelector('#navbar');
 			
 			window.addEventListener('scroll', function() {
 			  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
