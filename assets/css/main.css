@@ -8647,55 +8647,89 @@ input, select, textarea {
 		  padding: 0;
 		}
 
-/* Smooth scroll for the contact me */
-		html {
-		  scroll-behavior: smooth;
+	/* Smooth scroll for the contact me */
+				html {
+				  scroll-behavior: smooth;
+				}
+		#navbar {
+		  opacity: 0;
+		  transition: opacity 0.5s;
 		}
-#navbar {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-#navbar.visible {
-  opacity: 1;
-}
-
-/* Smart Nav Bar and Transparent */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-}
-
-#navbar {
-  width: 100vw;                     /* Full viewport width */
-  left: 0;
-  right: 0;
-  transform: none;
-  position: fixed;
-  top: 0;
-  background: rgba(50, 50, 50, 0.6); /* semi-transparent dark gray */
-  z-index: 1000;
-  transition: top 0.3s;
-  border-radius: 0;                /* Remove rounded corners */
-  height: 35px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-/* Tablets */
-@media (max-width: 1000px) {
-  #navbar {
-    height: 50px;
-    padding: 0 10px;
-  }
-}
-
-/* Phones */
-@media (max-width: 600px) {
-  #navbar {
-    height: 35px;
-    padding: 0 5px;
-  }
-}
+		#navbar.visible {
+		  opacity: 1;
+		}
+		
+	/* Smart Nav Bar and Transparent */
+		html, body {
+		  margin: 0;
+		  padding: 0;
+		  width: 100vw;
+		}
+		
+		#navbar {
+		  width: 100vw;                     /* Full viewport width */
+		  left: 0;
+		  right: 0;
+		  transform: none;
+		  position: fixed;
+		  top: 0;
+		  background: rgba(50, 50, 50, 0.6); /* semi-transparent dark gray */
+		  z-index: 1000;
+		  transition: top 0.3s;
+		  border-radius: 0;                /* Remove rounded corners */
+		  height: 35px;
+		  display: flex;
+		  align-items: center;
+		  padding: 0 20px;
+		  box-sizing: border-box;
+		}
+		
+		/* Tablets */
+		@media (max-width: 1000px) {
+		  #navbar {
+		    height: 50px;
+		    padding: 0 10px;
+		  }
+		}
+		
+		/* Phones */
+		@media (max-width: 600px) {
+		  #navbar {
+		    height: 35px;
+		    padding: 0 5px;
+		  }
+		}
+		/* Smaller Contact Section */
+		#contact {
+		  padding: 2em 1em; /* less space on top/bottom, small side padding for mobile */
+		}
+		
+		#contact .inner.medium {
+		  max-width: 600px;
+		  width: 100%;
+		  margin: 0 auto;
+		}
+		
+		/* Make sure form fields look good on all screen sizes */
+		#contact .field.half {
+		  width: 100%;
+		  margin-bottom: 1em;
+		}
+		
+		/* Optional: only split form in two on larger screens */
+		@media screen and (min-width: 768px) {
+		  #contact .field.half {
+		    width: 48%;
+		    display: inline-block;
+		  }
+		
+		  #contact .fields {
+		    display: flex;
+		    justify-content: space-between;
+		    flex-wrap: wrap;
+		  }
+		
+		  #contact .field {
+		    margin-bottom: 1.5em;
+		  }
+		}
