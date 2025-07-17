@@ -8713,36 +8713,38 @@ input, select, textarea {
 				  transform: translateY(0);
 				}
 
-	/* Smaller Contact Section */
+	/* Much tighter padding */
 			#contact {
-			  padding: 1.5em 0.5em; /* tighter spacing */
+			  padding: 0.75em 0.25em;
 			}
 			
+			/* Smaller heading */
 			#contact h2 {
-			  font-size: 1.5rem; /* smaller heading */
-			  margin-bottom: 1em;
+			  font-size: 1.2rem;
+			  margin-bottom: 0.5em;
 			}
 			
+			/* Container tighter */
 			#contact .inner.medium {
-			  max-width: 500px;
+			  max-width: 400px;
 			  width: 100%;
 			  margin: 0 auto;
 			}
 			
-			/* Make form inputs smaller */
+			/* Smaller form fields */
 			#contact input,
 			#contact textarea {
-			  font-size: 0.9rem;
-			  padding: 0.6em;
+			  font-size: 0.75rem;
+			  padding: 0.4em;
 			}
 			
-			/* Field layout for small screens */
+			/* Fields on small screens: stacked */
 			#contact .field.half {
 			  width: 100%;
-			  margin-bottom: 0.8em;
+			  margin-bottom: 0.5em;
 			}
 			
-			/* Split layout on larger screens */
+			/* Tighter layout for large screens */
 			@media screen and (min-width: 768px) {
 			  #contact .field.half {
 			    width: 48%;
@@ -8756,6 +8758,12 @@ input, select, textarea {
 			  }
 			
 			  #contact .field {
-			    margin-bottom: 1em;
+			    margin-bottom: 0.75em;
 			  }
+			}
+			
+			/* Smaller submit button */
+			#contact input[type="submit"] {
+			  font-size: 0.8rem;
+			  padding: 0.4em 0.8em;
 			}
