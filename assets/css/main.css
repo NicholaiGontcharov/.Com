@@ -8646,3 +8646,8 @@ input, select, textarea {
 		  margin: 0;
 		  padding: 0;
 		}
+
+/* Smooth scroll for the contact me */
+		html {
+		  scroll-behavior: smooth;
+		}
