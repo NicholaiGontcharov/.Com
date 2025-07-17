@@ -8630,3 +8630,19 @@ input, select, textarea {
 			.nav-strip ul li a:hover {
 			  color: #00c6ff;
 			}
+
+		/* Right-align the navigation bar */
+		#navbar {
+		  display: flex;
+		  justify-content: flex-end; /* Aligns the nav bar to the right */
+		  background: transparent; /* Keep your background as desired */
+		  padding: 1em 2em;
+		}
+		
+		#navbar ul {
+		  display: flex;
+		  gap: 1em;
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		}
