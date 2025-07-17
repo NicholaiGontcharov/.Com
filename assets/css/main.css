@@ -8713,57 +8713,47 @@ input, select, textarea {
 				  transform: translateY(0);
 				}
 
-	/* Much tighter padding */
-			#contact {
-			  padding: 0.75em 0.25em;
-			}
-			
-			/* Smaller heading */
-			#contact h2 {
-			  font-size: 1.2rem;
-			  margin-bottom: 0.5em;
-			}
-			
-			/* Container tighter */
+		/* Restore width */
 			#contact .inner.medium {
-			  max-width: 400px;
+			  max-width: 600px; /* or your original width */
 			  width: 100%;
 			  margin: 0 auto;
 			}
 			
-			/* Smaller form fields */
-			#contact input,
-			#contact textarea {
-			  font-size: 0.75rem;
-			  padding: 0.4em;
+			/* Reduce padding on section */
+			#contact {
+			  padding-top: 1em;
+			  padding-bottom: 1em;
 			}
 			
-			/* Fields on small screens: stacked */
-			#contact .field.half {
-			  width: 100%;
+			/* Smaller margins on heading */
+			#contact h2 {
+			  margin-top: 0;
+			  margin-bottom: 0.5em;
+			  font-size: 1.5rem; /* adjust if needed */
+			}
+			
+			/* Reduce vertical space around fields */
+			#contact .fields {
+			  margin-top: 0;
+			  margin-bottom: 0;
+			}
+			
+			/* Tighten up individual fields */
+			#contact .field {
 			  margin-bottom: 0.5em;
 			}
 			
-			/* Tighter layout for large screens */
-			@media screen and (min-width: 768px) {
-			  #contact .field.half {
-			    width: 48%;
-			    display: inline-block;
-			  }
-			
-			  #contact .fields {
-			    display: flex;
-			    justify-content: space-between;
-			    flex-wrap: wrap;
-			  }
-			
-			  #contact .field {
-			    margin-bottom: 0.75em;
-			  }
+			/* Reduce padding inside inputs and textarea */
+			#contact input,
+			#contact textarea {
+			  padding: 0.5em;
+			  font-size: 1rem;
+			  line-height: 1.2;
 			}
 			
-			/* Smaller submit button */
+			/* Smaller submit button padding */
 			#contact input[type="submit"] {
-			  font-size: 0.8rem;
-			  padding: 0.4em 0.8em;
+			  padding: 0.5em 1em;
+			  font-size: 1rem;
 			}
