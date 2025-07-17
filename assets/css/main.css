@@ -8700,36 +8700,48 @@ input, select, textarea {
 		  }
 		}
 		/* Smaller Contact Section */
-		#contact {
-		  padding: 2em 1em; /* less space on top/bottom, small side padding for mobile */
-		}
-		
-		#contact .inner.medium {
-		  max-width: 600px;
-		  width: 100%;
-		  margin: 0 auto;
-		}
-		
-		/* Make sure form fields look good on all screen sizes */
-		#contact .field.half {
-		  width: 100%;
-		  margin-bottom: 1em;
-		}
-		
-		/* Optional: only split form in two on larger screens */
-		@media screen and (min-width: 768px) {
-		  #contact .field.half {
-		    width: 48%;
-		    display: inline-block;
-		  }
-		
-		  #contact .fields {
-		    display: flex;
-		    justify-content: space-between;
-		    flex-wrap: wrap;
-		  }
-		
-		  #contact .field {
-		    margin-bottom: 1.5em;
-		  }
-		}
+			#contact {
+			  padding: 1.5em 0.5em; /* tighter spacing */
+			}
+			
+			#contact h2 {
+			  font-size: 1.5rem; /* smaller heading */
+			  margin-bottom: 1em;
+			}
+			
+			#contact .inner.medium {
+			  max-width: 500px;
+			  width: 100%;
+			  margin: 0 auto;
+			}
+			
+			/* Make form inputs smaller */
+			#contact input,
+			#contact textarea {
+			  font-size: 0.9rem;
+			  padding: 0.6em;
+			}
+			
+			/* Field layout for small screens */
+			#contact .field.half {
+			  width: 100%;
+			  margin-bottom: 0.8em;
+			}
+			
+			/* Split layout on larger screens */
+			@media screen and (min-width: 768px) {
+			  #contact .field.half {
+			    width: 48%;
+			    display: inline-block;
+			  }
+			
+			  #contact .fields {
+			    display: flex;
+			    justify-content: space-between;
+			    flex-wrap: wrap;
+			  }
+			
+			  #contact .field {
+			    margin-bottom: 1em;
+			  }
+			}
