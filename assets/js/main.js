@@ -337,8 +337,13 @@
 							}, 275);
 
 						});
-
-				
+	
+			document.addEventListener('DOMContentLoaded', function () {
+			  const header = document.querySelector('#main-header');
+			  if (header) {
+			    header.classList.add('visible');
+		  }
+		});
 			
 	
 })(jQuery);
