@@ -8660,6 +8660,7 @@ input, select, textarea {
 		}
 		
 	/* NAVBAR STYLES */
+		/*
 			#navbar {
 			  position: fixed;
 			  top: 0;
@@ -8705,7 +8706,7 @@ input, select, textarea {
 			  color: #00c6ff;
 			}
 			
-			/* RESPONSIVE HEIGHTS */
+	 RESPONSIVE HEIGHTS 
 			@media (max-width: 1000px) {
 			  #navbar {
 			    height: 30px;
@@ -8719,19 +8720,77 @@ input, select, textarea {
 			    padding: 0 5px;
 			  }
 			}
-		/* Smooth Nav Bar transition */
-			/* Initial hidden state */
-				#navbar {
+	 Smooth Nav Bar transition */
+	 Initial hidden state */
+	/*
+				 #navbar {
 				  opacity: 0;
 				  transform: translateY(-20px);
 				  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 				}
-				
-				/* When visible */
+
+	 When visible
 				#navbar.visible {
 				  opacity: 1;
 				  transform: translateY(0);
 				}
+	*/
+
+			#main-header {
+				  position: fixed;
+				  top: 0;
+				  width: 100%;
+				  background: white;
+				  text-align: center;
+				  padding: 1em 0 0.5em 0;
+				  z-index: 999;
+				  border-bottom: 1px solid #e0e0e0;
+				  font-family: 'Source Sans Pro', sans-serif;
+			}
+			
+			#main-header h1 {
+				  font-size: 1.5rem;
+				  letter-spacing: 1px;
+				  font-weight: 400;
+				  margin: 0;
+			}
+			
+			#main-header h1 a {
+				  text-decoration: none;
+				  color: #111;
+			}
+			
+			#main-header nav ul {
+				  display: flex;
+				  justify-content: center;
+				  gap: 2em;
+				  margin-top: 0.5em;
+				  padding: 0;
+				  list-style: none;
+			}
+			
+			#main-header nav ul li a {
+				  text-decoration: none;
+				  color: #444;
+				  font-weight: 500;
+				  border-bottom: 2px solid transparent;
+				  padding-bottom: 4px;
+				  transition: border 0.3s ease;
+				  font-size: 1rem;
+			}
+			
+			#main-header nav ul li a:hover,
+			#main-header nav ul li a.active {
+			  border-color: black;
+			}
+			
+			/* Responsive for smaller screens */
+			@media (max-width: 600px) {
+			  #main-header nav ul {
+			    flex-direction: column;
+			    gap: 1em;
+			  }
+			}
 
 	/* Restore Contact width */
 		#contact .inner.medium {
