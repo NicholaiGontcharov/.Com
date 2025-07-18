@@ -338,28 +338,7 @@
 
 						});
 
-				let lastScrollTop = 0;
-			const navbar = document.querySelector('#navbar');
-			
-			window.addEventListener('scroll', function() {
-			  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-			
-			  if (scrollTop > lastScrollTop) {
-			    // Scrolling down
-			    navbar.style.top = '-70px'; // Adjust value to your navbar's height
-			  } else {
-			    // Scrolling up
-			    navbar.style.top = '0';
-			  }
-			  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-			}, false);
-	
-			// Navbar fade in.
-			  window.addEventListener('DOMContentLoaded', function() {
-			    setTimeout(function() {
-			      document.getElementById('navbar').classList.add('visible');
-			    }, 750); // 2000 milliseconds = 2 seconds
-			  });
+				
 			
 	
 })(jQuery);
