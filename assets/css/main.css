@@ -9025,3 +9025,34 @@ input, select, textarea {
 			.main-nav ul li a.active {
 			  border-color: #000;
 			}
+
+			.portfolio-gallery {
+			  padding: 4rem 2rem;
+			  background: #fafafa;
+			}
+			
+			.gallery-grid {
+			  display: grid;
+			  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			  gap: 2rem;
+			  max-width: 1200px;
+			  margin: 0 auto;
+			}
+			
+			.gallery-item {
+			  text-align: center;
+			}
+			
+			.gallery-item img {
+			  width: 100%;
+			  border-radius: 6px;
+			  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+			  margin-bottom: 0.75rem;
+			}
+			
+			.caption-text {
+			  font-size: 0.85rem;
+			  text-transform: uppercase;
+			  letter-spacing: 0.05em;
+			  color: #666;
+			}
