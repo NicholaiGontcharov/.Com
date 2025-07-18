@@ -8631,21 +8631,7 @@ input, select, textarea {
 			  color: #00c6ff;
 			}
 
-		/* Right-align the navigation bar */
-		#navbar {
-		  display: flex;
-		  justify-content: flex-end; /* Aligns the nav bar to the right */
-		  background: transparent; /* Keep your background as desired */
-		  padding: 1em 2em;
-		}
 		
-		#navbar ul {
-		  display: flex;
-		  gap: 1em;
-		  list-style: none;
-		  margin: 0;
-		  padding: 0;
-		}
 
 	/* Smooth scroll for the contact me */
 				html {
@@ -8658,7 +8644,25 @@ input, select, textarea {
 		#navbar.visible {
 		  opacity: 1;
 		}
-		
+
+		/* Right-align the navigation bar */
+			/*
+				#navbar {
+				  display: flex;
+				  justify-content: flex-end; /* Aligns the nav bar to the right */
+				  background: transparent; /* Keep your background as desired */
+				  padding: 1em 2em;
+				}
+			*/
+			/*
+				#navbar ul {
+				  display: flex;
+				  gap: 1em;
+				  list-style: none;
+				  margin: 0;
+				  padding: 0;
+				}
+			*/
 	/* NAVBAR STYLES */
 		/*
 			#navbar {
@@ -8791,6 +8795,44 @@ input, select, textarea {
 			    gap: 1em;
 			  }
 			}
+
+				
+				.nav-container {
+				  width: 100%;
+				  max-width: 1200px;
+				  display: flex;
+				  justify-content: space-between;
+				  align-items: center;
+				  padding: 0 2em;
+				}
+				
+				.nav-name {
+				  position: absolute;
+				  left: 50%;
+				  transform: translateX(-50%);
+				  font-size: 1.25rem;
+				  font-weight: 600;
+				  color: white;
+				}
+				
+				.nav-links {
+				  display: flex;
+				  gap: 1.5em;
+				  list-style: none;
+				  margin: 0;
+				  padding: 0;
+				}
+				
+				.nav-links li a {
+				  color: white;
+				  text-decoration: none;
+				  font-weight: 500;
+				  transition: color 0.3s ease;
+				}
+				
+				.nav-links li a:hover {
+				  color: #00c6ff;
+				}
 
 	/* Restore Contact width */
 		#contact .inner.medium {
