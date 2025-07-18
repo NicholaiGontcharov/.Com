@@ -8802,15 +8802,13 @@ input, select, textarea {
 				  border-color: #000;
 				}
 				
-				#main-header nav ul {
-				  display: flex;
-				  justify-content: center;
-				  align-items: center;
-				  flex-wrap: wrap; /* allows wrapping if needed */
-				  gap: 1.5em;
-				  padding: 0;
-				  margin: 0;
-				  list-style: none;
+				@media (max-width: 600px) {
+				  #main-header nav ul {
+				    flex-direction: row;  /* forces horizontal layout even on small screens */
+				    flex-wrap: wrap;      /* optional: lets links wrap to a new line if space runs out */
+				    justify-content: center;
+				    gap: 1em;
+				  }
 				}
 
 				
