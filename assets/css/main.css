@@ -8740,24 +8740,24 @@ input, select, textarea {
 				}
 	*/
 
-			#main-header {
-				  position: fixed;
+		/* Main Header (merged version) */
+				#main-header {
+				  position: sticky;
 				  top: 0;
 				  width: 100%;
 				  background: white;
 				  text-align: center;
-				  padding: 1.5em 0 0.25em 0;
+				  padding: 1.5em 1em 1em;
 				  z-index: 999;
 				  border-bottom: 1px solid #e0e0e0;
 				  font-family: 'Source Sans Pro', sans-serif;
 				
-				  /* Animation start state */
+				  /* Animation */
 				  opacity: 0;
 				  transform: translateY(-30px);
 				}
 				
 				#main-header.visible {
-				  /* Trigger animation */
 				  animation: slideFadeIn 0.75s ease-out forwards;
 				  animation-delay: 0.2s;
 				}
@@ -8767,50 +8767,48 @@ input, select, textarea {
 				    opacity: 1;
 				    transform: translateY(0);
 				  }
-			}
-			#main-header h1 {
-				  font-size: 1.5rem;
-				  letter-spacing: 1px;
-				  font-weight: 400;
-				  margin: 0;
-			}
-			
-			#main-header h1 a {
-				  text-decoration: none;
-				  color: #111;
-			}
-			
-			#main-header nav ul {
-				  display: flex;
-				  justify-content: center;
-				  gap: 1em;
-				  margin-top: 0.5em;
-				  padding: 0;
-				  list-style: none;
-			}
-			
-			#main-header nav ul li a {
-				  text-decoration: none;
-				  color: #444;
-				  font-weight: 500;
-				  border-bottom: 2px solid transparent;
-				  padding-bottom: 4px;
-				  transition: border 0.3s ease;
+				}
+				
+				#main-header .nav-name {
+				  font-weight: 700;
+				  letter-spacing: 0.2em;
 				  font-size: 1rem;
-			}
-			
-			#main-header nav ul li a:hover,
-			#main-header nav ul li a.active {
-			  border-color: black;
-			}
-			
-			/* Responsive for smaller screens */
-			@media (max-width: 600px) {
-			  #main-header nav ul {
-			    flex-direction: column;
-			    gap: 1em;
-			  }
-			}
+				  margin-bottom: 0.5em;
+				  color: #111;
+				}
+				
+				#main-header nav ul {
+				  display: inline-flex;
+				  gap: 2em;
+				  padding: 0;
+				  margin: 0;
+				  list-style: none;
+				  flex-wrap: wrap;
+				  justify-content: center;
+				}
+				
+				#main-header nav ul li a {
+				  text-decoration: none;
+				  color: #222;
+				  font-size: 0.9rem;
+				  font-weight: 500;
+				  padding-bottom: 0.25em;
+				  border-bottom: 2px solid transparent;
+				  transition: border-color 0.3s ease;
+				}
+				
+				#main-header nav ul li a:hover,
+				#main-header nav ul li a.active {
+				  border-color: #000;
+				}
+				
+				/* Responsive for smaller screens */
+				@media (max-width: 600px) {
+				  #main-header nav ul {
+				    flex-direction: column;
+				    gap: 1em;
+				  }
+				}
 
 				
 				.nav-container {
@@ -8983,49 +8981,7 @@ input, select, textarea {
 			  text-transform: uppercase;
 			}
 
-		/* Top Nav Bar - New Styles */
-			#top-nav {
-			  text-align: center;
-			  padding: 1.5em 1em 1em;
-			  border-bottom: 1px solid #e0e0e0;
-			  font-family: 'Source Sans Pro', sans-serif;
-			  background: white;
-			  position: sticky;
-			  top: 0;
-			  z-index: 1000;
-			}
-			
-			.nav-name {
-			  font-weight: 700;
-			  letter-spacing: 0.2em;
-			  font-size: 1rem;
-			  margin-bottom: 0.5em;
-			  color: #111;
-			}
-			
-			.main-nav ul {
-			  display: inline-flex;
-			  gap: 2em;
-			  padding: 0;
-			  margin: 0;
-			  list-style: none;
-			}
-			
-			.main-nav ul li a {
-			  text-decoration: none;
-			  color: #222;
-			  font-size: 0.9rem;
-			  font-weight: 500;
-			  padding-bottom: 0.25em;
-			  border-bottom: 2px solid transparent;
-			  transition: border-color 0.3s ease;
-			}
-			
-			.main-nav ul li a:hover,
-			.main-nav ul li a.active {
-			  border-color: #000;
-			}
-
+	/* Grid gallery */
 			.portfolio-gallery {
 			  padding: 4rem 2rem;
 			  background: #fafafa;
