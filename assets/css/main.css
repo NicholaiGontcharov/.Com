@@ -8982,3 +8982,46 @@ input, select, textarea {
 			  color: #666;
 			  text-transform: uppercase;
 			}
+
+		/* Top Nav Bar - New Styles */
+			#top-nav {
+			  text-align: center;
+			  padding: 1.5em 1em 1em;
+			  border-bottom: 1px solid #e0e0e0;
+			  font-family: 'Source Sans Pro', sans-serif;
+			  background: white;
+			  position: sticky;
+			  top: 0;
+			  z-index: 1000;
+			}
+			
+			.nav-name {
+			  font-weight: 700;
+			  letter-spacing: 0.2em;
+			  font-size: 1rem;
+			  margin-bottom: 0.5em;
+			  color: #111;
+			}
+			
+			.main-nav ul {
+			  display: inline-flex;
+			  gap: 2em;
+			  padding: 0;
+			  margin: 0;
+			  list-style: none;
+			}
+			
+			.main-nav ul li a {
+			  text-decoration: none;
+			  color: #222;
+			  font-size: 0.9rem;
+			  font-weight: 500;
+			  padding-bottom: 0.25em;
+			  border-bottom: 2px solid transparent;
+			  transition: border-color 0.3s ease;
+			}
+			
+			.main-nav ul li a:hover,
+			.main-nav ul li a.active {
+			  border-color: #000;
+			}
