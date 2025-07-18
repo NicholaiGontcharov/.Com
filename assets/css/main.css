@@ -8750,15 +8750,24 @@ input, select, textarea {
 				  z-index: 999;
 				  border-bottom: 1px solid #e0e0e0;
 				  font-family: 'Source Sans Pro', sans-serif;
-			
-
-		  		/* Animation part */
+				
+				  /* Animation start state */
 				  opacity: 0;
 				  transform: translateY(-30px);
+				}
+				
+				#main-header.visible {
+				  /* Trigger animation */
 				  animation: slideFadeIn 0.75s ease-out forwards;
 				  animation-delay: 0.2s;
+				}
+				
+				@keyframes slideFadeIn {
+				  to {
+				    opacity: 1;
+				    transform: translateY(0);
+				  }
 			}
-
 			#main-header h1 {
 				  font-size: 1.5rem;
 				  letter-spacing: 1px;
