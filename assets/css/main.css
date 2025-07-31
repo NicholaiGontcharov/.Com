@@ -9013,3 +9013,62 @@ input, select, textarea {
 			  letter-spacing: 0.05em;
 			  color: #666;
 			}
+
+			/* smooth transitions */
+			.gallery-item img {
+			  transition: transform .3s ease, box-shadow .3s ease;
+			  will-change: transform;
+			}
+			
+			.caption-text {
+			  position: relative;
+			  padding-bottom: 6px; /* space for underline */
+			  transition: color .25s ease;
+			}
+			
+			/* underline like nav bar (hidden by default) */
+			.caption-text::after {
+			  content: "";
+			  position: absolute;
+			  left: 50%;
+			  bottom: 0;
+			  transform: translateX(-50%) scaleX(0);
+			  transform-origin: center;
+			  width: 60%;
+			  height: 2px;
+			  background: currentColor;
+			  transition: transform .25s ease;
+			  border-radius: 1px;
+			}
+			
+			/* hover / focus effects on the whole item */
+			.gallery-item:hover img,
+			.gallery-item:focus-within img {
+			  transform: scale(1.04);
+			  box-shadow: 0 12px 30px -6px rgba(0, 0, 0, 0.15);
+			}
+			
+			.gallery-item:hover .caption-text::after,
+			.gallery-item:focus-within .caption-text::after {
+			  transform: translateX(-50%) scaleX(1);
+			}
+			
+			.gallery-item:hover .caption-text,
+			.gallery-item:focus-within .caption-text {
+			  color: #222; /* slightly darker on hover for contrast */
+			}
+			
+			/* optional subtle lift of entire tile */
+			.gallery-item {
+			  transition: transform .3s ease;
+			}
+			.gallery-item:hover,
+			.gallery-item:focus-within {
+			  transform: translateY(-2px);
+			}
+			
+			/* keyboard accessibility */
+			.gallery-item a:focus-visible .caption-text {
+			  outline: 2px solid #2563eb;
+			  outline-offset: 2px;
+			}
