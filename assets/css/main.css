@@ -9089,3 +9089,59 @@ input, select, textarea {
 			.caption-text {
 			  position: relative;
 			  padding-bottom: 
+
+				  /* Match filter-button font to .subname */
+			.filter-button {
+			  cursor: pointer;
+			  background: none;
+			  border: 1px solid #444;
+			  padding: 0.5em 1em;
+			  border-radius: 6px;
+			  font: inherit;
+			  /* if .subname uses a custom font-family, you can explicitly inherit it: */
+			  font-family: inherit;
+			  transition: background .25s ease, transform .15s ease;
+			}
+			
+			.filter-button:hover {
+			  background: rgba(0,0,0,0.05);
+			}
+			
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			
+			.dropdown-menu {
+			  position: absolute;
+			  top: calc(100% + 6px);
+			  left: 0;
+			  background: white;
+			  border: 1px solid #ccc;
+			  border-radius: 8px;
+			  padding: 0.75rem 1rem;
+			  box-shadow: 0 12px 32px -4px rgba(0,0,0,0.1);
+			  opacity: 0;
+			  visibility: hidden;
+			  transform: scaleY(0.95);
+			  transform-origin: top center;
+			  transition: opacity .25s ease, transform .25s ease, visibility .25s;
+			  z-index: 10;
+			  min-width: 220px;
+			  font-size: 0.9rem;
+			}
+			
+			.dropdown-menu .section {
+			  margin-bottom: 0.75rem;
+			}
+			
+			.dropdown-menu .section:last-child {
+			  margin-bottom: 0;
+			}
+			
+			.dropdown.open .dropdown-menu {
+			  opacity: 1;
+			  visibility: visible;
+			  transform: scaleY(1);
+			}
+
