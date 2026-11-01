@@ -1,1 +1,143 @@
-test
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html> 
+	
+  	<head>
+  		<title>Portfolio - Nicholai</title>
+  		<meta charset="utf-8" />
+  		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  		<link rel="stylesheet" href="assets/css/main.css" />
+  		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  	</head> 
+  	
+  	<body class="is-preload">
+  		<div id="wrapper">
+  			<header id="main-header">
+  			<!--  <h1><a href="#">Nicholai Gontcharov</a></h1>  -->
+  			  <nav>
+  			    <ul>
+  			      <li><a href="index.html" >Home</a></li>
+  			      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+  			      <li><a href="about.html">About Me</a></li>
+  			      <li><a href="#contact">Contact</a></li>
+  			    </ul>
+  			  </nav>
+  			</header>
+  	
+  		
+  		<!-- Main Body -->
+  		
+  		<section class="portfolio-gallery">
+  			  <h1 style="text-align:center; letter-spacing:0.05em; margin-bottom:2rem;">2026 Capstone Project: Grit Hydroponics</h1>
+  			  <div style="text-align: center; margin-bottom: 2em;">
+  			    <a href="images/Resume 2025.pdf" target="_blank" rel="noopener" class="button small">Project Details and Files</a>
+  			  </div>
+
+<style>
+  .case-study { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem 3rem; line-height: 1.7; }
+  .case-study h2 { margin: 2.5rem 0 0.75rem; font-size: 1.3rem; letter-spacing: 0.03em; }
+  .case-study .status { text-align: center; font-size: 0.9rem; opacity: 0.75; margin-bottom: 1.5rem; }
+  .case-study .summary { font-size: 1.1rem; margin-bottom: 1rem; }
+  .case-study .facts { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid rgba(128,128,128,.35); border-bottom: 1px solid rgba(128,128,128,.35); }
+  .case-study .facts div { min-width: 7rem; }
+  .case-study .facts strong { display: block; font-size: 1.5rem; line-height: 1.2; }
+  .case-study table { width: 100%; font-size: 0.95rem; }
+  .case-study .todo { font-style: italic; opacity: 0.7; }
+  .case-study figure { margin: 1.5rem 0; }
+  .case-study figure img { max-width: 100%; height: auto; }
+  .case-study figcaption { font-size: 0.85rem; opacity: 0.7; margin-top: 0.4rem; }
+</style>
+
+<article class="case-study">
+
+  <p class="status">Status: in progress (Capstone I). Expected completion April 2027. Last updated: [DATE]</p>
+
+  <!-- 1. HOOK -->
+  <p class="summary">
+    UVU's Grit Gardens grows fresh food for Fresh Food Fridays, but production stops every October when the outdoor season ends.
+    My capstone team is building the control system for a mobile indoor hydroponic cart that monitors and corrects its own water chemistry, so fresh food can keep coming through fall and winter.
+  </p>
+
+  <div class="facts">
+    <div><strong>72</strong>plant sites</div>
+    <div><strong>6</strong>live measurements</div>
+    <div><strong>24/7</strong>automatic monitoring</div>
+    <div><strong>~$980</strong>control system cost</div>
+  </div>
+
+  <!-- 2. PROBLEM -->
+  <h2>The problem</h2>
+  <p>
+    UVU has no hydroponics unit on campus, and students have little daily contact with plants inside enclosed buildings.
+    Grit Gardens already owns an indoor cart, but it runs on a basic timer with no sensors. If the water chemistry drifts or the tank runs dry, nobody knows until the roots die and the harvest drops.
+  </p>
+  <p>The cart needs to:</p>
+  <ul>
+    <li>Track pH, nutrient strength (EC), temperatures, humidity, and water level</li>
+    <li>Correct high pH automatically and sound an alarm for out-of-range readings</li>
+    <li>Warn before the tank runs dry</li>
+    <li>Stay mobile and safe around water and 120 V power</li>
+  </ul>
+
+  <!-- 3. ROLE / TEAM -->
+  <h2>Team and my role</h2>
+  <p>
+    This is a joint project between the College of Engineering (our four-person Mechatronics capstone team) and the College of Science (a research team that determines the plant setpoints and runs the pilot grow).
+    I am the student lead for the capstone team.
+  </p>
+  <p class="todo">[Add 2-3 sentences on what YOU personally designed, built, or decided: wiring, PLC programming, sensor selection, coordinating with Grit Gardens, etc.]</p>
+
+  <!-- 4. SOLUTION -->
+  <h2>The approach</h2>
+  <p>
+    An industrial PLC runs the cart in a continuous loop: sense the water, decide whether it is in range, act (run the pump, dose acid, shut down on low water), and show everything on a screen.
+    Water drips through two felt-pocket walls in 30-minute pump cycles and drains back to the tank, so the sensors see the whole system.
+  </p>
+
+  <!-- 5. DECISIONS (storytelling seed) -->
+  <h2>Key decisions</h2>
+  <table>
+    <thead><tr><th>Decision</th><th>What we chose</th><th>What we passed on</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Controller</td><td>Click PLC (already owned)</td><td>Arduino Opta, $166</td><td>Built for nonstop duty, and no purchase needed</td></tr>
+      <tr><td>Sensors</td><td>RS-485 Modbus</td><td>Analog boards</td><td>One cable, and it resists pump noise</td></tr>
+      <tr><td>Water level</td><td>Six $15 capacitive sensors</td><td>Six $110 load cells</td><td>Gives a cutoff plus a trend for far less</td></tr>
+    </tbody>
+  </table>
+  <p>Reusing parts the customer already owned brought the estimated cost from $1,182 down to about $980.</p>
+  <p class="todo">[Optional: tell one decision as a short story. What did you expect, what happened, what did you change?]</p>
+
+  <!-- 6. SAFETY -->
+  <h2>Designing for safety</h2>
+  <p>
+    The pump runs on 120 V inside a water tank, so safety shaped the design from the start: GFCI protection on the pump outlet, 24 V DC for all sensors, a hardwired E-stop that cuts every output, capped acid doses that stop if the pH sensor fails, and a low tank that resists tipping.
+  </p>
+
+  <!-- 7. PROGRESS -->
+  <h2>Progress so far</h2>
+  <ul>
+    <li>Research and system design complete: requirements, component selection, cost estimate, safety plan</li>
+    <li class="todo">[Add what you've built or tested so far]</li>
+  </ul>
+
+  <figure>
+    <!-- <img src="images/cart-photo.jpg" alt="Early prototype of the hydroponic cart"> -->
+    <figcaption class="todo">[Add a photo, wiring diagram, or screenshot of the screen layout]</figcaption>
+  </figure>
+
+  <!-- 8. NEXT -->
+  <h2>What's next</h2>
+  <ul>
+    <li><strong>By December 11:</strong> pass/fail testing. Each sensor matches a reference, the system logs 24 hours of data, pH moves to a new setpoint and holds it, the E-stop and low-water cutoffs stop the pumps, and a student worker can clear a low-water alarm using only the screen</li>
+    <li><strong>Spring:</strong> pilot grow with the research team, then handoff to Grit Gardens</li>
+  </ul>
+
+  <!-- 9. PLACEHOLDERS -->
+  <h2>Results and reflection</h2>
+  <p class="todo">Coming after the pilot grow.</p>
+
+</article>
