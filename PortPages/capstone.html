@@ -13,8 +13,15 @@
   		<link rel="stylesheet" href="assets/css/main.css" />
   		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   	</head> 
+
+	<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var h = document.getElementById('main-header');
+    if (h) h.classList.add('visible');
+  });
+</script>
   	
-  	<body class="is-preload">
+	<body class="is-preload">
   		<div id="wrapper">
   			<header id="main-header">
   			<!--  <h1><a href="#">Nicholai Gontcharov</a></h1>  -->
